@@ -1,0 +1,108 @@
+.section4 {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section4-header h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .section4-header p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+  }
+  
+  .section4-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .section4-card {
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section4-card:hover {
+    transform: scale(0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section4-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .section4-card-text {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #000;
+  }
+  
+  .section4-card-text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .section4-card-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .section4-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section4 {
+      padding: 2rem 1rem;
+    }
+    .section4-header h2 {
+      font-size: 1.6rem;
+    }
+    .section4-header p {
+      font-size: 0.9rem;
+    }
+    .section4-card-text {
+      padding: 0.75rem;
+    }
+    .section4-card-text h3 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .big-black-button {
+    margin: 4rem auto 0;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1.5rem 2.5rem;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .big-black-button:hover {
+    background-color: #222;
+  }
+  

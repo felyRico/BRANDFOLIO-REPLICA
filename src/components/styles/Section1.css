@@ -1,0 +1,122 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section Layout */
+.hero-section {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Left Side of Hero */
+.hero-left {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+}
+
+.hero-left-text {
+  max-width: 400px;
+}
+
+/* Right Side of Hero */
+.hero-right {
+  width: 30%;
+  background-color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+/* Image Container */
+.images-container {
+  display: flex;
+  gap: 2rem;
+  height: 80vh;
+  width: 100%;
+  margin-left: -5rem;
+  position: relative;
+}
+
+/* Image Column with Overflow Hidden */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-column img {
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.image-column img:hover {
+  transform: scale(0.95);
+}
+
+/* Text Styling */
+.hero-title {
+  color: #000;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.hero-subtitle {
+  font-size: 1.44rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  color: #333;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #333;
+  transform: scale(0.95);
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.secondary-btn:hover {
+  background-color: #f9f9f9;
+  transform: scale(0.95);
+}

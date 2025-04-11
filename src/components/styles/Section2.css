@@ -1,0 +1,227 @@
+.included-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-text {
+  margin-bottom: 3rem;
+}
+
+.included-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.included-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #000;
+}
+
+.card-text h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.card-text p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .included-section {
+    padding: 2rem 1rem;
+  }
+  .included-title {
+    font-size: 1.6rem;
+  }
+  .included-subtitle {
+    font-size: 0.9rem;
+  }
+  .card-text {
+    padding: 0.75rem;
+  }
+  .card-text h3 {
+    font-size: 1.1rem;
+  }
+  .card-text p {
+    font-size: 0.85rem;
+  }
+}
+
+.large-card-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.large-card-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.large-card-content {
+  flex: 1;
+  padding: 2rem;
+  border-right: 1px solid #000;
+}
+
+.figma-logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.brix-logo {
+  width: 70px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.large-card-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.large-card-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.large-card-button {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
+}
+
+.large-card-button:hover {
+  background-color: #f8f8f8;
+}
+
+.large-card-image {
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.figma-bg {
+  background-image: url('https://cdn.prod.website-files.com/66d745be9e684f30f3960c6a/66d745be9e684f30f3960fc2_brandingfolio-x-figma-included-branding-agency-webflow-template.png');
+}
+
+.brix-bg {
+  background-image: url('https://cdn.prod.website-files.com/66d745be9e684f30f3960c6a/66d745be9e684f30f3960f4f_brandingfolio-x-brix-included-branding-agency-webflow-template.png');
+  border-right: none;
+}
+
+.second-large-card {
+  flex-direction: row;
+}
+
+.second-large-card .large-card-content {
+  border-right: none;
+  border-left: 1px solid #000;
+}
+
+.big-black-button {
+  margin: 4rem auto 0;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .large-card-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .large-card-content {
+    border-right: none;
+    border-left: none;
+  }
+  .large-card-container > div {
+    width: 100%;
+    border: none;
+  }
+  .large-card-image {
+    min-height: 250px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .large-card-title {
+    font-size: 2rem;
+  }
+  .large-card-description {
+    font-size: 1rem;
+  }
+}
