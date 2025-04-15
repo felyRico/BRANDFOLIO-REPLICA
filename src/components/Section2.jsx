@@ -88,23 +88,24 @@ const Section2 = () => {
             }
 
              if (largeCard2Ref.current) {
-                 gsap.from(largeCard2Ref.current.querySelector('.large-card-image.brix-bg'), {
-                    opacity: 0,
-                    y: 40,
-                    duration: 1.0,
-                    ease: 'power3.out',
-                    scrollTrigger: {
-                        trigger: largeCard2Ref.current,
-                        start: 'top 75%',
-                        toggleActions: 'play none none none',
-                    }
-                });
+                 // NOTE: The order is now text first then image, matching the 1st card
                  gsap.from(largeCard2Ref.current.querySelector('.large-card-content').children, {
                     opacity: 0,
                     y: 40,
                     duration: 0.8,
                     ease: 'power3.out',
                     stagger: 0.15,
+                    scrollTrigger: {
+                        trigger: largeCard2Ref.current,
+                        start: 'top 75%',
+                        toggleActions: 'play none none none',
+                    }
+                });
+                 gsap.from(largeCard2Ref.current.querySelector('.large-card-image.brix-bg'), {
+                    opacity: 0,
+                    y: 40,
+                    duration: 1.0,
+                    ease: 'power3.out',
                     scrollTrigger: {
                         trigger: largeCard2Ref.current,
                         start: 'top 75%',
@@ -141,7 +142,7 @@ const Section2 = () => {
             <div ref={headerTextRef} className="section-text">
                  <h2 className="included-title">What is included in Brandingfolio X</h2>
                 <p className="included-subtitle">
-                    <span style={{ fontWeight: 'bold' }}>Brandingfolio X Webflow</span> Template includes over <span style={{ fontWeight: 'bold' }}>19 pages</span> in total, with more than <span style={{ fontWeight: 'bold' }}> 35 sections. </span>
+                    <span style={{ fontWeight: 'bold' }}>Brandingfolio X Webflow</span> Template includes over <span style={{ fontWeight: 'bold' }}>19 pages</span> in total, with more than <span style={{ fontWeight: 'bold' }}>35 sections</span>.
                 </p>
             </div>
 
@@ -193,22 +194,16 @@ const Section2 = () => {
                     />
                     <h2 className="large-card-title">Figma file included</h2>
                     <p className="large-card-description">
-                        Send us an email to <a href="mailto:brandingfoliox@brixtemplates.com">brandingfoliox@brixtemplates.com</a>
-                        with your purchase receipt, and we will send you the editable Figma file
-                        for the Brandingfolio X template.
+                        Send us an email to <a href="mailto:brandingfoliox@brixtemplates.com">brandingfoliox@brixtemplates.com</a> with your purchase receipt, and we will send you the editable Figma file for the Brandingfolio X template.
                     </p>
                     <button className="large-card-button">Request figma file</button>
                 </div>
-                <div
-                    className="large-card-image figma-bg"
-                />
+                <div className="large-card-image figma-bg" />
             </div>
 
+            {/* Updated second large card with text on top and image below */}
             <div ref={largeCard2Ref} className="large-card-container second-large-card">
-                 <div
-                    className="large-card-image brix-bg"
-                />
-                <div className="large-card-content">
+                 <div className="large-card-content">
                     <img
                         src="https://asset.brandfetch.io/idSowef9v6/idMLIbowxT.jpeg?updated=1703823021610"
                         alt="Brix logo"
@@ -219,7 +214,8 @@ const Section2 = () => {
                         Take a look at our collection of 100+ premium Webflow Templates at BRIX Templates.
                     </p>
                     <button className="large-card-button">Browse templates</button>
-                </div>
+                 </div>
+                 <div className="large-card-image brix-bg" />
             </div>
 
             <button ref={finalButtonRef} className="big-black-button">Buy template</button>

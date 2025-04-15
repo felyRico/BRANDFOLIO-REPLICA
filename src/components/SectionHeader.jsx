@@ -10,7 +10,7 @@ const SectionHeader = () => {
     const ctx = gsap.context(() => {
       gsap.from(headerRef.current, {
         opacity: 0,
-        duration: 2,
+        duration: 1,
         ease: 'power2.out',
       });
     }, headerRef);

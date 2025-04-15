@@ -174,11 +174,8 @@
   border-right: none;
 }
 
-.second-large-card {
-  flex-direction: row;
-}
 
-.second-large-card .large-card-content {
+.large-card-content {
   border-right: none;
   border-left: 1px solid #000;
 }

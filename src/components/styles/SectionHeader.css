@@ -1,118 +1,126 @@
+/* Global reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-    color: #333;
-  }
-  
-  .header {
-    background-color: #fff;
-  }
-  
-  .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-  }
-  
-  .left-section {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  .logo-container {
-    flex-shrink: 0;
-  }
-  
-  .logo-link {
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .logo {
-    height: 25px;
-    width: auto;
-    display: block;
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .nav-links li {
-    position: relative;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #999;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 120px;
-    border: 1px solid #eee;
-    margin-top: 0.5rem;
-    list-style: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 0;
-  }
-  
-  .dropdown-content li {
-    padding: 0.5rem;
-  }
-  
-  .dropdown-content li a {
-    color: #333;
-  }
-  
-  .dropdown-content li a:hover {
-    color: #999;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .cart-item a {
-    font-weight: 600;
-  }
-  
-  .contact-container {
-    margin-left: 1rem;
-  }
-  
-  .contact-button {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem 1rem;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-button:hover {
-    background-color: #333;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Header styling */
+.header {
+  background-color: #fff;
+}
+
+/* Navbar container */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+/* Left section containing logo and nav */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+/* Logo styling */
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo {
+  height: 25px;
+  width: auto;
+  display: block;
+}
+
+/* Desktop nav links */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #999;
+}
+
+/* Dropdown on hover for pages */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  border: 1px solid #eee;
+  margin-top: 0.5rem;
+  list-style: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.dropdown-content li {
+  padding: 0.5rem;
+}
+
+.dropdown-content li a {
+  color: #333;
+}
+
+.dropdown-content li a:hover {
+  color: #999;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.cart-item a {
+  font-weight: 600;
+}
+
+.contact-container {
+  margin-left: 1rem;
+}
+
+.contact-button {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #333;
+}
+
